@@ -1,1 +1,1 @@
-ALTER TABLE payments ADD COLUMN refund_reason TEXT;
+ALTER TABLE orders ADD COLUMN refund_reason TEXT;
