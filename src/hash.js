@@ -5,3 +5,4 @@ function fingerprint(value) {
 }
 
 module.exports = { fingerprint };
+// free plan check
