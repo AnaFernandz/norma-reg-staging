@@ -1,7 +1,7 @@
 const crypto = require('crypto');
 
-function hashPassword(password) {
-  return crypto.createHash('md5').update(password).digest('hex');
+function fingerprint(value) {
+  return crypto.createHash('sha256').update(value).digest('hex');
 }
 
-module.exports = { hashPassword };
+module.exports = { fingerprint };
