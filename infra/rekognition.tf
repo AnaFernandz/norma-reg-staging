@@ -1,3 +1,3 @@
-resource "aws_rekognition_collection" "faces" {
-  collection_id = "norma-reg-faces"
+resource "aws_s3_bucket" "faces" {
+  bucket = "norma-reg-faces"
 }
