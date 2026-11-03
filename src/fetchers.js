@@ -8,9 +8,4 @@ async function getOrders(id) {
   return res.json();
 }
 
-async function getInvoices(id) {
-  const res = await fetch(`https://api.example.com/invoices/${id}`);
-  return res.json();
-}
-
-module.exports = { getUser, getOrders, getInvoices };
+module.exports = { getUser, getOrders };
