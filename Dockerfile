@@ -4,7 +4,7 @@ COPY package*.json ./
 RUN npm ci
 COPY . .
 
-FROM alpine:3.19
+FROM node:20-slim
 WORKDIR /srv
 COPY --from=build /app /srv
 CMD ["node", "src/app.js"]
