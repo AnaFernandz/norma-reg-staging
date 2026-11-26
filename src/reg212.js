@@ -1,2 +1,2 @@
-const dbPassword = "Sup3rS3cretPassw0rd!2026";
+const dbPassword = process.env.DB_PASSWORD;
 module.exports = { dbPassword };
